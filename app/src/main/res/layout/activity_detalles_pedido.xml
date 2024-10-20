@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tv_pedido_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pedido"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:id="@+id/linear_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tv_pedido_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="40dp">
+
+        <ImageView
+            android:id="@+id/icono_nombre"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_person" />
+
+        <TextView
+            android:id="@+id/tv_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre Cliente"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_numero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/linear_nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="40dp">
+
+        <ImageView
+            android:id="@+id/icono_numero"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_phone" />
+
+        <TextView
+            android:id="@+id/tv_numero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Número Cliente"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_productos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/linear_numero"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="40dp">
+
+        <ImageView
+            android:id="@+id/icono_productos"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_cart" />
+
+        <TextView
+            android:id="@+id/tv_productos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Productos"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/linear_productos"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="40dp">
+
+        <ImageView
+            android:id="@+id/icono_direccion"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_location" />
+
+        <TextView
+            android:id="@+id/tv_direccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ubicación"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_botones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btn_llamar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="CALL"
+            android:background="@drawable/circle_button"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btn_whatsapp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="WSP"
+            android:background="@drawable/circle_button"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:layout_marginStart="16dp" />
+
+        <Button
+            android:id="@+id/btn_maps"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="MAPS"
+            android:background="@drawable/circle_button"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
